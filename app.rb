@@ -11,7 +11,7 @@ class App < Sinatra::Base
   get "/hello/:greeter/gretee" do
     @greeter = params[:greeter]
     @greetee = params[:greetee]
-    "Hello #{@user_name}!"
+    "Hello #{@greetee}. I'm #{@greeter}!"
   end
 
   # Code your final two routes here:
